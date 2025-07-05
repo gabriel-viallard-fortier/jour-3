@@ -1,0 +1,248 @@
+
+
+/*barre de tete avec logo*/
+header {
+    line-height: 23px;
+    font-weight: 500;
+    top: 0;
+    background-color: #fff;
+
+}
+p {
+    font-size: 1.2rem;
+}
+
+h1
+{
+    color: #fff;
+    font-size: 1.7em;
+}
+
+h2 {
+    color: white;
+}
+h3 {
+    font-size: 2rem;
+}
+.center {
+        text-align: center;
+
+    }
+.mentions-legales {
+    font-size: 0.7rem;
+}
+
+.logo {
+
+    padding-left: 5%;
+    padding-top: 1%;
+    border-bottom: 1 solid #ccc;
+    margin-bottom: 0;
+    max-height: 54%;
+    display: inline-block;
+    width: 30%;
+}
+
+/*texte de présentation et lien cadre bleu*/
+.textelink {
+    height: auto;
+    background-color: #0062ff;
+    padding-top: 20px;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    min-height: 1px;
+    display: grid;
+
+}
+
+
+.pres {
+    display: flex;
+}
+
+/*photo visage*/
+.imagepres {
+    width: 75%;
+    display: flex;
+}
+
+
+.textelink {
+    width: 60%;
+}
+
+.entete {
+    width: 100%;
+}
+
+
+img {
+    max-width: 100%;
+
+    margin: 0 auto;
+}
+
+.textelink,
+.imagepres {
+    align-items: flex-end;
+}
+
+.insc{
+    font-size: 17px;
+    color: #fff;
+    background-color: #e74a34;
+    display: block;
+    padding: 10px ;
+    width: 69%;
+}
+.link-container{
+    display: flex;
+    flex-direction: row ;
+    
+    
+    
+}
+.utilelink{
+    font-size: 17px;
+    
+    
+}
+.icone{
+    width: 34px;
+    
+}
+.lientext{
+    color: #fff;
+    
+}
+#logobas{
+    
+}
+
+
+body{
+    background-color: white;
+    margin: 0 0;
+}
+
+.contain-flex {
+    padding: 0% 10%;
+    display: flex;
+    justify-content: center;
+}
+.contain-grid {
+    display: inline-block;
+}
+
+form {
+    font-size: 1rem;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto auto;
+}
+select {
+    width: 292px;    
+}
+fieldset {
+    background: linear-gradient(rgb(0, 162, 255), lightblue, cyan);
+    border-radius: 50px;
+}
+.contain-flex {
+    display: flex;
+    margin: auto auto;
+}
+#message {
+    height: 100px;
+    width: 60%;
+}
+#envoyer {
+    margin: 1rem auto;
+    background-color: #e74a34;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+}
+.container-contact{
+    font-variant: small-caps; 
+    border: black solid 4px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    color: white;
+    padding: 2%;
+
+    
+}
+.container-contact a {
+    text-decoration: none;
+    color: white;
+
+}
+.container-contact:hover {
+    background-color: rgba(10,10,10,0.5);
+}
+
+.question {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+}
+
+.liens-reseaux {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;    
+}
+.contain-box {
+
+   display: grid;
+   justify-content: center;
+}
+.container-principal {
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   text-align: center;
+   padding: 2% 5%;
+   background-color: #0062ff;
+}
+.photo {
+    padding: 10%;   
+    flex-grow: 1;
+
+}
+.accroche{
+    display: block;
+    text-align: justify;
+    width: 40%;
+}
+footer {
+    background-color: rgb(31,31,31);
+    color: white;
+    display: flex;
+    padding: 1%;
+}
+.liste-liens {
+    margin: 2rem auto;
+    flex-direction: column;
+    justify-content: center;
+}
+#gauche {
+    margin: auto auto;
+    width: 500px;
+}
+#rejoindre {
+    color: black;
+    background-color: white;
+
+}
+#telecharger {
+    background-color: red;
+}
+a {
+    text-decoration: none;
+}
