@@ -8,40 +8,9 @@ header {
     background-color: #fff;
 
 }
-p {
-    font-size: 1.2rem;
-}
 
-h1
-{
-    color: #fff;
-    font-size: 1.7em;
-}
 
-h2 {
-    color: white;
-}
-h3 {
-    font-size: 2rem;
-}
-.center {
-        text-align: center;
 
-    }
-.mentions-legales {
-    font-size: 0.7rem;
-}
-
-.logo {
-
-    padding-left: 5%;
-    padding-top: 1%;
-    border-bottom: 1 solid #ccc;
-    margin-bottom: 0;
-    max-height: 54%;
-    display: inline-block;
-    width: 30%;
-}
 
 /*texte de présentation et lien cadre bleu*/
 .textelink {
@@ -83,7 +52,6 @@ img {
     margin: 0 auto;
 }
 
-.textelink,
 .imagepres {
     align-items: flex-end;
 }
@@ -116,45 +84,53 @@ img {
     color: #fff;
     
 }
-#logobas{
-    
-}
-
 
 body{
     background-color: white;
     margin: 0 0;
+    width: auto;
+    overflow-x:hidden;
 }
 
 .contain-flex {
-    padding: 0% 10%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .contain-grid {
-    display: inline-block;
+    display: grid;
 }
 
 form {
+    display: grid;
+    padding: 0% 0%;
+    margin: auto auto;
+    width: 100%;
+    justify-content: center;
     font-size: 1rem;
-    max-width: 500px;
-    max-height: 500px;
     margin: auto auto;
 }
 select {
-    width: 292px;    
+    width: 100%;    
 }
 fieldset {
+    width: 100px;
     background: linear-gradient(rgb(0, 162, 255), lightblue, cyan);
     border-radius: 50px;
 }
 .contain-flex {
     display: flex;
     margin: auto auto;
+    padding: 0%;
+    justify-content: center;
+}
+.input {
+
+    overflow: scroll;
 }
 #message {
-    height: 100px;
-    width: 60%;
+    height: 60px;
+    width: 97%;
 }
 #envoyer {
     margin: 1rem auto;
@@ -163,7 +139,8 @@ fieldset {
     height: 30px;
     border-radius: 10px;
 }
-.container-contact{
+.bouton{
+    padding: 1% 1%;
     font-variant: small-caps; 
     border: black solid 4px;
     border-radius: 10px;
@@ -171,79 +148,163 @@ fieldset {
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-    text-decoration: none;
     color: white;
-    padding: 2%;
+    text-align: center;
+}
 
-    
-}
-#contact {
-}
-.container-contact a {
-    text-decoration: none;
-    color: white;
-
-}
-.container-contact:hover {
-    background-color: rgba(0,0,0,0.5)
+.bouton:hover {
+    background-color: rgba(10,10,10,0.8);
 }
 
 .question {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
+    width: 90%;
+    margin: 2rem auto;
     color: black;
 }
 
 .liens-reseaux {
     display: flex;
-    justify-content: space-around;
-    padding: 2%;    
+    justify-content: space-between; 
 }
 .contain-box {
 
    display: grid;
-   justify-content: center;
 }
 .container-principal {
-   display: flex;
-   height: 100%;
-   flex-direction: column;
-   text-align: center;
-   padding: 2% 5%;
    background-color: #0062ff;
-}
-.photo {
-    padding: 10%;   
-    flex-grow: 1;
+    padding:5% 10%;
 
 }
-.accroche{
-    display: block;
-    text-align: justify;
-    width: 40%;
+/* Pour telephones */
+@media only screen and (max-width:767px)
+{
+    .photo {
+    width: 80%;
+    margin: 2rem auto;
 }
+
 footer {
+    display: inline-block;
+    width: 100%;
     background-color: rgb(31,31,31);
     color: white;
+    padding: 50px 0px;
+
+}
+.logo {
     display: flex;
-    padding: 1%;
+    width: 75%;
+}
+
+#gauche {
+    padding: 5%;
+}
+
+.liste-liens {
+    padding: 10%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* dipsplay:block pour les smartphones */
+.accroche{
+    display: block;
+    padding: 5% 5%;
+    justify-content: center;
+    text-align: justify;
+    margin: auto auto;
+    }
+
+}
+
+
+
+
+
+/* pour ordinateurs */
+@media only screen and (min-width: 768px) {
+
+.photo {
+    width: 50%;
+    margin: 2rem auto;
+}
+    footer {
+    padding: 50px 0px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(31,31,31);
+    color: white;
 }
 .liste-liens {
-    margin: 2rem auto;
+    margin: 0 auto;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
+.logo {
+    display: flex;
+    width: 30%;
+}
+
 #gauche {
-    margin: auto auto;
-    width: 500px;
+    padding: 5%;
 }
+
+/* flex  */
+.accroche{
+
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    width: 100%;
+    margin: auto auto;
+}
+
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+h1
+{
+    color: black;
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+}
+h3 {
+    font-size: 1.2rem;
+}
+label {
+    text-align: center;
+}
+.center {
+        text-align: center;
+
+    }
+.mentions-legales {
+    font-size: 0.5rem;
+}
+
+
+
+
+
 #rejoindre {
     color: black;
     background-color: white;
 
+
 }
 #telecharger {
+    color: white;
+    
     background-color: red;
 }
 a {

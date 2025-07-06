@@ -5,41 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
     <title>Contact</title>
-
-
-<body>
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <title>Laplateforme_</title>
 </head>
-
 <body>
-    <section class="banniere-haut">
         <header>
             <div class="logo">
                 <img src="logo-laplateforme-2024.png" alt="">
             </div>
         </header>
-    <main>
-        <div class="container-principal">
+     <main>
 
         <div class="container-principal">
-            <div class="contain-flex">
-                <div class="contain-grid accroche" >    
-                    <h3 class="center">La grande école du numérique pour tous</h3>
-                    <h2>Besoin d’un renseignement sur nos cursus, notre accompagnement entreprises, nos projets et actions ? Contactez-nous.</h2>
 
-                    <div class="photo">
-                        <img src="picplateforme.jpg" alt="photo" width="350">
+                <div class="contain-grid accroche">
+
+                    <div class="contain-grid">
+                        <h1 class="center">La grande école du numérique pour tous</h1>
+                        <h2>Besoin d’un renseignement sur nos cursus, notre accompagnement entreprises, nos projets et actions ? Contactez-nous.</h2>
+
+                        <div class="photo">
+                            <img src="picplateforme.jpg" alt="photo">
+                        </div>
                     </div>
-                </div>
-                <form>
+                    <form>
                     <fieldset>
+                        <legend></legend>
                         <section  class="contain-grid">
                             <h2>Contacter la platerfome</h2>
                             <label name="contact">Civilité : </label><br>
@@ -58,7 +47,7 @@
                                 <input type="text" name="email" placeholder="exemple@email.com" size="30">
                                 <input type="tel" name="telephone" placeholder="00 12 34 56 78" size="30">
                         </section>
-                        <div class="contain-box">     
+                        <div class="contain-box">
                             <section class="contain-grid">
                                         <select name="motif">
                                         <option value="">Sélectionnez un motif</option>
@@ -71,25 +60,21 @@
                                         <option value="autre">Autre</option>
                                     </select>
                             </section>
+                        <input type="text" id="message" name="message" placeholder="Votre message" maxlength="1024">                        <div class="contain-flex">
 
-                        <div class="contain-grid">
-                                
-                                <input type="text" id="message" name="message" placeholder="Votre message" maxlength="1024"><br><br>
                                 <input type="checkbox" requiered name="accord">
                                 <label name="accord">J'accepte de recevoir des informations sur la Plateforme_</label>
-                                
-                        </div>  
+                        </div>
                         <div class="mentions-legales"><br>Selon l'article L.223-2 du code de la consommation, il est rappelé que le consommateur peut user de son droit à s'inscrire sur la liste d'opposition au démarchage téléphonique bloctel : bloctel.gouv.fr</div>
-                            <section class="contain-box"> 
+                            <section class="contain-box">
                                 <button id="envoyer" type="submit">Envoyer</button>
                             </section>
-                    
+
                         </div>
-                    
+
                     </fieldset>
                     </form>
                 </div>
-            </div>
 
             </div>
     </main>
@@ -102,24 +87,23 @@
                         lundi au vendredi de 9h à 17h<br>– Sur les réseaux sociaux :</p>
 
                 <div class="liens-reseaux">
-                    <a href="https://facebook.com/laplateforme">Suivre sur Facebook</span></a>
+                    <a href="https://facebook.com/laplateforme">Suivre sur Facebook</a>
                     <a href="https://www.linkedin.com/company/laplateformeio" class="icon et_pb_with_border"
-                            title="Suivez sur LinkedIn" target="_blank"><span class="et_pb_social_media_follow_network_name"
-                                aria-hidden="true">Suivre</span></a>
+                            title="Suivez sur LinkedIn" target="_blank">Suivre sur LinkedIn</a>
 
                     <a href="https://twitter.com/LaPlateformeIO" class="icon et_pb_with_border"
                             title="Suivez sur Twitter" target="_blank"><span class="et_pb_social_media_follow_network_name"
-                                aria-hidden="true">Suivre</span></a>
+                                aria-hidden="true">Suivre sur <span class="ai-twitter"></span></span></a>
                     <a href="https://www.instagram.com/LaPlateformeIO" title="Suivez sur Instagram" target="_blank"><span
                                 aria-hidden="true">Suivre sur Instagram</span></a>
                 </div>
             </div>
-             <footer>
-                <div id="gauche" class="liste-liens">
-                    <img src="Fichier-1.svg" alt="La plateforme"><br><br>
 
-                    <a id="rejoindre" class="container-contact">Rejoingnez nos équipes</a>
-                    <a id="telecharger" class="container-contact">Télécharger la brochure</a>
+        <footer>
+                <div class="logo liste-liens">
+                    <img src="Fichier-1.svg" alt="La plateforme"><br>
+                    <a id="rejoindre" class="bouton">Rejoingnez nos équipes</a>
+                    <a id="telecharger" class="bouton">Télécharger la brochure</a>
                 </div>
                 <div class="liste-liens">
                     <h3>La Plateforme</h3><br>
@@ -157,8 +141,9 @@
 
                     <p>Tel : 04.84.89.43.69</p><br>
 
-                    <a class="container-contact" id="contact" href="contact.html">Contact</a>
-                </div>
+                    <a class="bouton" href="contact.html">Contact</a>
+                 </div>
+
         </footer>
 </body>
 </html>
