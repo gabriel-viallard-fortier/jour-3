@@ -1,54 +1,102 @@
 
 
-/*barre de tete avec logo*/
+@font-face {
+  font-display: swap;
+  font-family: 'Google Sans Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/GoogleSansCode[wght].ttf');
+}
+
+h1, h2, h3{
+    font-family: Google Sans Code;
+}
+
+body{
+    background-color: white;
+    overflow-x:hidden;
+
+}
 header {
-    line-height: 23px;
-    top: 0;
+    display: flex;
+    height: 94px;
     background-color: #fff;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+    
+}
+/* dropdown */
 
+    .dropdown{
+    display: inline-block;
+     
 }
 
-
-
-
-/*texte de présentation et lien cadre bleu*/
-.textelink {
-    height: auto;
-    background-color: #0062ff;
-    padding-top: 20px;
-    padding-right: 5%;
-    padding-bottom: 20px;
-    padding-left: 5%;
-    min-height: 1px;
-    display: grid;
-
+.dropdown button{
+    background-color: oklab(55.605000000000004% -0.03694 -0.24263);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
 }
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{         /*   */ 
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.dropdown-content {  
+
+    right: 0; 
+    }
 
 
 .pres {
     display: flex;
 }
 
+/*texte de présentation et lien cadre bleu*/
+.textelink {
+    width: 50%;
+    color: white;
+    display: block;
+}
 /*photo visage*/
 .imagepres {
-    width: 75%;
-    display: flex;
+    width: 50%;
 }
 
-
-.textelink {
-    width: 60%;
-}
 
 .entete {
-    width: 100%;
+    padding: 20% 10%;
+    flex-direction: column;
+    
 }
-
-
-img {
-    max-width: 100%;
-
-    margin: 0 auto;
+.entete p {
+    font-size: 1.5rem;
+}
+.entete h1
+{
+    color: white;
+    font-size: 2rem;
 }
 
 .imagepres {
@@ -56,7 +104,6 @@ img {
 }
 
 .insc{
-    font-size: 17px;
     color: #fff;
     background-color: #e74a34;
     display: block;
@@ -65,8 +112,8 @@ img {
 }
 .link-container{
     display: flex;
+    padding: 5%;
     flex-direction: row ;
-    
     
     
 }
@@ -82,13 +129,6 @@ img {
 .lientext{
     color: #fff;
     
-}
-
-body{
-    background-color: white;
-    margin: 0 0;
-    width: auto;
-    overflow-x:hidden;
 }
 
 .contain-flex {
@@ -171,7 +211,7 @@ fieldset {
 }
 .container-principal {
    background-color: #0062ff;
-    padding:5% 10%;
+    justify-content: space-between;
 
 }
 /* Pour telephones */
@@ -269,7 +309,7 @@ p {
 h1
 {
     color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 h2 {
